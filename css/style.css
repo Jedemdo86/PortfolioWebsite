@@ -81,7 +81,7 @@
       color: #020617;
       transform: translateY(-2px);
     }
-
+    /*Footer*/
     footer{
       background: var(--grey);
       display: grid;
@@ -91,6 +91,34 @@
       color: #669;
     }
     footer .impressum
+
+    .site-footer {
+        margin-top: 50px;
+        padding: 20px;
+        border-top: 1px solid #eaeaea;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    .footer-links a {
+        text-decoration: none;
+        color: #323232;
+        margin: 0 10px;
+        font-size: 0.9rem;
+    }
+
+    .footer-links a:hover {
+        text-decoration: underline;
+    }
+
+    .separator {
+        color: #ccc;
+    }
+
+    .footer-text {
+        color: #999;
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
 
     /* Content */
     .content-wrap{

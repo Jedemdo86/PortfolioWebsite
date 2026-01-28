@@ -1,51 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
-
-    <title>(Inhalt: About You / Startseite)</title>
-    
-    
+    <title>Portfolio</title>
 </head>
-<!-- HEAD AREA-->
-<header>
-<div class="header-content">
 
-<!--CUSTOM Picture-->
-<div class="profile-pic">
-    <img src="#" alt="Your Name">
-</div>
-
-<!-- NAV BAR-->
-      <div id="nav">
-        <nav>
-            <ul>
-                <li><a href="index.html">Über mich</a></li>
-                <li><a href="cv.html">CV/Lebenslauf</a></li>
-                <li><a href="zertifikate.html">Zertifikate</a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-      </div>
-
-
-
-</div>
-  
-</header>
-
-<!--SIDEBAR-->
-
-<!--am besten mit aside einen "container Bauen " class="sidebar"-->
-
-<!-- BOODY -->
 <body>
-<!-- MAIN CONTENT AREA-->
+<div class="page" id="page">
+    <header>
+        <!-- Um das Banner zu ändern müssen hier die Kommentare entfernt werden und im Css-Order das Bild geändert werden -->
+        <img src="css\image.png" alt="Hier könnte ihre Dogge stehen." width = "100%" height = "150">
+    </header>
 
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html">Über mich</a></li>
+            <li><a href="cv.html">CV/Lebenslauf</a></li>
+            <li><a href="zertifikate.html">Zertifikate</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="content-wrap">
+        <aside class="sidebar" id="sidebar">
+            <button class="sidebar-toggle" id="toggleBtn" aria-expanded="false">
+                ☰
+            </button>
+            <div>
+
+                <div class="title">*Sidebar*</div>
+            </div>
+
+
+            <div class="hint">ESC oder Klick außerhalb schließt</div>
+        </aside>
+
+        <div class="overlay" id="overlay"></div>
+
+        <main>
+            <div class="mainframe">
+                <h1>Mein Name</h1>
+
+
+            </div>
+        </main>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <span class="separator">|</span>
+        <a href="legal-notice.html">Legal Notice</a>
+    </div>
+    <p class="footer-text">
+        &copy; 2026 [Dein Name] • Erstellt für Bewerbungszwecke
+    </p>
+</footer>
+
+
+<script>
+    const page = document.getElementById("page");
+    const btn = document.getElementById("toggleBtn");
+    const overlay = document.getElementById("overlay");
+
+    const setOpen = (open) => {
+      page.classList.toggle("is-open", open);
+      btn.setAttribute("aria-expanded", open);
+    };
+
+    btn.addEventListener("click", () => {
+      setOpen(!page.classList.contains("is-open"));
+    });
+
+    overlay.addEventListener("click", () => setOpen(false));
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape") setOpen(false);
+    });
+</script>
 </body>
-
-<!-- FOOTER -->
-
 </html>
+

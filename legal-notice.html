@@ -1,58 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Legal Notice</title>
+    <title>Portfolio</title>
 </head>
-<body>
 
-<header>
-    <nav id="nav">
-        <ul>
+<body>
+<div class="page" id="page">
+    <header>
+        <!-- Um das Banner zu ändern müssen hier die Kommentare entfernt werden und im Css-Order das Bild geändert werden -->
+        <img src="css\image.png" alt="Hier könnte ihre Dogge stehen." width = "100%" height = "150">
+    </header>
+
+    <nav>
+        <ul class="nav-list">
             <li><a href="index.html">Über mich</a></li>
             <li><a href="cv.html">CV/Lebenslauf</a></li>
             <li><a href="zertifikate.html">Zertifikate</a></li>
         </ul>
     </nav>
-</header>
-
-<main style="max-width: 800px; margin: 2rem auto; padding: 20px; background: #fff; min-height: 70vh;">
-    <h1>Legal Notice / Datenschutz</h1>
-    <h2>1. Datenschutz auf einen Blick</h2>
-    <p>Diese Website dient rein zu Bewerbungszwecken. Es werden keine Tracking-Tools (wie Google Analytics) oder Cookies verwendet.</p>
-
-    <h2>2. Hosting</h2>
-    <p>Diese Webseite wird bei [Name des Hosters, z.B. GitHub oder Netlify] gehostet. Der Provider erhebt automatisch Server-Log-Dateien (IP-Adresse, Zeitstempel), um den sicheren Betrieb zu gewährleisten.</p>
-
-    <h2>3. Ihre Rechte</h2>
-    <p>Sie haben das Recht auf unentgeltliche Auskunft über Ihre gespeicherten Daten sowie ein Recht auf Berichtigung oder Löschung.</p>
-</main>
 
 
+    <div class="content-wrap">
+        <aside class="sidebar" id="sidebar">
+            <button class="sidebar-toggle" id="toggleBtn" aria-expanded="false">
+                ☰
+            </button>
+            <div>
 
-</body>
-</html>
-<!--SIDEBAR-->
+                <div class="title">*Sidebar*</div>
+            </div>
 
-<!--am besten mit aside einen "container Bauen " class="sidebar"-->
 
-<!-- BOODY -->
-<body>
-<!-- MAIN CONTENT AREA-->
+            <div class="hint">ESC oder Klick außerhalb schließt</div>
+        </aside>
 
-</body>
+        <div class="overlay" id="overlay"></div>
 
-<footer style="margin-top: 50px; padding: 20px; border-top: 1px solid #eaeaea; text-align: center; font-family: sans-serif;">
-    <div class="footer-links">
-        <a href="impressum.html" style="text-decoration: none; color: #666; margin: 0 10px; font-size: 0.9rem;">Impressum</a>
-        <span style="color: #ccc;">|</span>
-        <a href="legal-notice.html" style="text-decoration: none; color: #666; margin: 0 10px; font-size: 0.9rem;">Legal Notice</a>
+        <main>
+            <div class="mainframe">
+                <h1>Nutzungsbedingungen (Muster für Projektzwecke)</h1>
+
+                <p>
+                    1.) Gegenstand des Angebots Diese Plattform ist ein Demonstrationsprojekt. Sie ermöglicht Nutzern (Bewerbern)
+                    das Erstellen digitaler Visitenkarten sowie den Upload von Lebensläufen und Zertifikaten. Registrierte Dritte (Recruiter)
+                    können diese Dokumente einsehen und herunterladen.
+                    </p>
+                <p>
+                    2.) Datenverfügbarkeit und Downloads Der Nutzer stimmt zu, dass hochgeladene Dokumente (CVs, Zeugnisse)
+                    von anderen Nutzern dieser Plattform heruntergeladen und lokal gespeichert werden können.
+                    Wir übernehmen keine Gewährleistung für die Vertraulichkeit der Daten, sobald diese die Plattform durch einen Download verlassen haben.
+                    </p>
+                <p>
+                    3.) Externe Verweise Die Plattform enthält Links zu externen Zertifikatsanbietern zur Validierung von Qualifikationen.
+                    Für die Inhalte und Sicherheit dieser externen Seiten sind ausschließlich deren Betreiber verantwortlich.
+                    </p>
+                <p>
+                    4.) Wichtiger Hinweis (Disclaimer) Dies ist ein reines Lernprojekt im Rahmen einer Agile/Scrum-Ausbildung.
+                    Es findet keine reale Vermittlung statt. Bitte laden Sie keine echten sensiblen Personendaten hoch
+                    (nutzen Sie stattdessen Musterdaten/Max Mustermann), da die Sicherheit der Daten nicht nach Industriestandards gewährleistet ist.
+                </p>
+
+            </div>
+        </main>
     </div>
-    <p style="color: #999; font-size: 0.8rem; margin-top: 10px;">
+</div>
+
+<footer class="site-footer">
+    <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <span class="separator">|</span>
+        <a href="legal-notice.html">Legal Notice</a>
+    </div>
+    <p class="footer-text">
         &copy; 2026 [Dein Name] • Erstellt für Bewerbungszwecke
     </p>
 </footer>
 
+
+<script>
+    const page = document.getElementById("page");
+    const btn = document.getElementById("toggleBtn");
+    const overlay = document.getElementById("overlay");
+
+    const setOpen = (open) => {
+      page.classList.toggle("is-open", open);
+      btn.setAttribute("aria-expanded", open);
+    };
+
+    btn.addEventListener("click", () => {
+      setOpen(!page.classList.contains("is-open"));
+    });
+
+    overlay.addEventListener("click", () => setOpen(false));
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape") setOpen(false);
+    });
+</script>
+</body>
 </html>
+
