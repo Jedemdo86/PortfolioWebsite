@@ -59,25 +59,8 @@
 </footer>
 
 
-<script>
-    const page = document.getElementById("page");
-    const btn = document.getElementById("toggleBtn");
-    const overlay = document.getElementById("overlay");
-
-    const setOpen = (open) => {
-      page.classList.toggle("is-open", open);
-      btn.setAttribute("aria-expanded", open);
-    };
-
-    btn.addEventListener("click", () => {
-      setOpen(!page.classList.contains("is-open"));
-    });
-
-    overlay.addEventListener("click", () => setOpen(false));
-    document.addEventListener("keydown", e => {
-      if (e.key === "Escape") setOpen(false);
-    });
-</script>
+<script src="JavaScript/mainFunctions.js"></script>
+<script src="JavaScript/dataLoader.js"></script>
 </body>
 </html>
 
