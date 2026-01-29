@@ -4,35 +4,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Portfolio</title>
+    <title>Portfolio - Zertifikate</title>
 </head>
 
 <body>
 <div class="page" id="page">
     <header>
-        <!-- Um das Banner zu ändern müssen hier die Kommentare entfernt werden und im Css-Order das Bild geändert werden -->
-        <img src="css\image.png" alt="Hier könnte ihre Dogge stehen." width = "100%" height = "150">
+        <img src="css/image.png" alt="Portfolio Banner" width="100%" height="150">
     </header>
 
     <nav>
-        <div class="nav-inner">
-
-            <div class="nav-template">
-                <a href="index.html" aria-label="Zur Startseite">
-                    <img src="css/profile.png" alt="Profilbild">
-                </a>
-            </div>
-
-            <ul class="nav-list">
-                <li><a href="index.html">Über mich</a></li>
-                <li><a href="cv.html">CV / Lebenslauf</a></li>
-                <li><a href="zertifikate.html">Zertifikate</a></li>
-                <li><a href="downloads/lebenslauf.pdf" download>Lebenslauf Download (PDF)</a></li>
-            </ul>
-
+        <div class="nav-template">
+            <img src="css/profile.png" alt="Profilbild">
         </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Über mich</a></li>
+            <li><a href="cv.html">CV/Lebenslauf</a></li>
+            <li><a href="zertifikate.html">Zertifikate</a></li>
+            <li><a href="downloads/Lebenslauf_Vorname_Nachname.pdf" download>Lebenslauf Download (PDF)</a></li>
+        </ul>
     </nav>
-
 
     <div class="content-wrap">
         <aside class="sidebar" id="sidebar">
@@ -40,38 +31,52 @@
                 ☰
             </button>
             <div>
-
-                <div class="title">*Sidebar*</div>
+                <div class="title">*Navigation*</div>
             </div>
-
-
             <div class="hint">ESC oder Klick außerhalb schließt</div>
         </aside>
 
         <div class="overlay" id="overlay"></div>
 
         <main>
-            <div class="mainframe">
+            <div class="mainframe" style="min-height: auto !important; padding-bottom: 40px;">
                 <h1>Zertifikate</h1>
+                <p style="text-align: center;">Klicken Sie auf den Namen zur Ansicht oder nutzen Sie den Button zum Speichern.</p>
+
+                <div class="center-download-area" style="display: flex; flex-direction: column; align-items: center; gap: 30px; margin-top: 40px;">
+
+                    <div class="cert-unit" style="text-align: center;">
+                        <strong style="display: block; margin-bottom: 10px;">Gesamtunterlagen</strong>
+                        <nav>
+                            <ul class="nav-list" style="padding: 0; list-style: none;">
+                                <li><a href="downloads/alle_unterlagen.zip" download>📥 Komplett-Download (ZIP)</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <hr style="width: 50%; border: 0; border-top: 1px solid #eee;">
+
+                    <div id="cert-container" style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 30px;">
+                    </div>
+
+                </div>
             </div>
         </main>
     </div>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="impressum.html">Impressum</a>
+            <span class="separator">|</span>
+            <a href="legal-notice.html">Legal Notice</a>
+        </div>
+        <p class="footer-text">
+            &copy; 2026 [Dein Name] • Erstellt für Bewerbungszwecke
+        </p>
+    </footer>
 </div>
-
-<footer class="site-footer">
-    <div class="footer-links">
-        <a href="impressum.html">Impressum</a>
-        <span class="separator">|</span>
-        <a href="legal-notice.html">Legal Notice</a>
-    </div>
-    <p class="footer-text">
-        &copy; 2026 [Dein Name] • Erstellt für Bewerbungszwecke
-    </p>
-</footer>
-
 
 <script src="JavaScript/mainFunctions.js"></script>
 <script src="JavaScript/dataLoader.js"></script>
 </body>
 </html>
-

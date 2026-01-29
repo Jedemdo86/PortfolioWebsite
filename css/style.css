@@ -276,6 +276,20 @@
         object-fit: cover;
     }
 
+/* Entfernt die weissen Kästen und Schatten um die Zertifikate-Buttons */
+.mainframe nav {
+    background: transparent !important;
+    box-shadow: none !important;
+    display: block !important; /* Verhindert das Grid-Layout der Haupt-Nav */
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Sorgt dafür, dass die Buttons in der Mitte bleiben */
+.mainframe .nav-list {
+    justify-content: center;
+    padding: 10px 0;
+}
     .impressum-section {
       line-height: 0.5;
     }
