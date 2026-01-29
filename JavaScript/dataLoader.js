@@ -1,45 +1,16 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // 1. Hier pflegst du deine Zertifikate ein
-    const zertifikate = [
-        { name: "Python Programmierung Zertifikat", datei: "python_cert.pdf" },
-        { name: "Scrum Master Foundation", datei: "scrum_cert.pdf" },
-        { name: "Sprachzertifikat Englisch (C1)", datei: "englisch_c1.pdf" },
-        { name: "Praktikumszeugnis", datei: "praktikum.pdf" }
-    ];
-
-    // 2. Den Container im HTML finden
-    const container = document.getElementById('cert-container');
-
-    if (container) {
-        // Wir bauen das HTML Stück für Stück zusammen
-        let htmlContent = '';
-
-        zertifikate.forEach(cert => {
-            htmlContent += `
-                <div class="cert-unit" style="text-align: center; margin-bottom: 30px;">
-                    <a href="downloads/${cert.datei}" target="_blank" style="text-decoration: none; color: inherit; font-weight: bold; font-size: 1.1rem; display: block; margin-bottom: 8px;">
-                        ${cert.name} (Ansehen)
-                    </a>
-                    <nav>
-                        <ul class="nav-list" style="padding: 0; list-style: none; margin: 0;">
-                            <li><a href="downloads/${cert.datei}" download>📥 Direkt Download (PDF)</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <hr style="width: 30%; border: 0; border-top: 1px solid #eee; margin: 20px auto;">
-            `;
-        });
-
-        // 3. Das generierte HTML in den Container schreiben
-        container.innerHTML = htmlContent;
-    }
-});
+// PortfolioWebsite/JavaScript/dataLoader.js
+/**
+ * dataLoader.js
+ * Lädt und verarbeitet JSON-Daten für das Portfolio-Website-Projekt.
+ * Verantwortlich für das Füllen von Inhalten auf verschiedenen Seiten basierend auf den JSON-Daten.
+ */
 function loadData() {
     try {
         const portfolio = jsonData.portfolio;
 
         //Funktion für alle Seiten
         fillContactInfo(portfolio.personalInfo);
+        fillaboutYouInfo(portfolio.aboutYou);
         //fillInterests(portfolio.interests);
 
         // Funktionen nur für Lebenslauf-Seite (cv.html)
@@ -76,6 +47,24 @@ function fillContactInfo(personalInfo) {
     console.log(" Kontaktinfo geladen");
 }
 
+
+
+/**
+* Füllt About-You Texte auf ALLEN Seiten
+* @param {Object} aboutYou - JSON-Daten mit persönlichen Informationen
+*/
+function fillaboutYouInfo(aboutYou) {
+    if (!aboutYou) return;
+
+    setText('.json-about-p1', aboutYou.p1 || '');
+    setText('.json-about-p2', aboutYou.p2 || '');
+    setText('.json-about-p3', aboutYou.p3 || '');
+
+    console.log(" About-You Texte geladen");
+}
+
+
+
 // ============ Ab hier CV.Verarbeitung ====================
 /** 
 *Erstellt die Berufserfahrungsliste für die Lebenslauf-Seite
@@ -109,7 +98,7 @@ function fillWorkExperience(workExperience) {
 }
 
 /** 
-*Erstellt die Berufserfahrungsliste für die Lebenslauf-Seite
+*Erstellt die Schulische Laufbahn für die Lebenslauf-Seite
 * @param {Array} education - Array mit Berufserfahrung aus JSON
 */
 function fillEducation(education) {
@@ -134,6 +123,38 @@ function fillEducation(education) {
     container.innerHTML = html;
 
     console.log(" Schulische Laufbahn geladen");
+}
+
+/**
+ *  Füllt Impressum-Daten auf impressum.html
+ * @param {Object} personalinfo - Personal Information
+ */
+
+function fillImpressumData (personalInfo) {
+    if(!personalInfo) return;
+    setText('.json-name', personalInfo.name);
+    setText('.json-address-street', personalInfo.address.street);
+    setText('.json-address-city', personalInfo.address.city);
+    setText('.json-address-country', personalInfo.address.country);
+    //setText('.json-phone', personalInfo.phone);
+    //setText('.json-email', personalInfo.email);
+
+    // Nur auf Impressum-Seite ausführen
+    const impressumContainer = document.querySelector('.impressum-section');
+    if(impressumContainer) {
+        const addressHtml = `
+            <p><strong>${personalInfo.name}</strong></p>
+            <p>${personalInfo.address.street}<br>
+            ${personalInfo.address.city}<br>
+            ${personalInfo.address.country}</p>
+            
+        `;
+    
+        //const firstSection = document.querySelector('.impressum-section');
+        //if(firstSection) {
+        //    firstSection.innerHTML = addressHtml;
+        //}
+    } 
 }
 
 /**
@@ -193,39 +214,6 @@ function fillSkills(skills) {
     console.log(" Skills geladen");
 }
 
-// ==================== Bestimmung der "Textfelder" ===================
-/**
- *  Füllt Impressum-Daten auf impressum.html
- * @param {Object} personalinfo - Personal Information
- */
-
-function fillImpressumData (personalInfo) {
-    if(!personalInfo) return;
-    setText('.json-name', personalInfo.name);
-    setText('.json-address-street', personalInfo.address.street);
-    setText('.json-address-city', personalInfo.address.city);
-    setText('.json-address-country', personalInfo.address.country);
-    //setText('.json-phone', personalInfo.phone);
-    //setText('.json-email', personalInfo.email);
-
-    // Nur auf Impressum-Seite ausführen
-    const impressumContainer = document.querySelector('.impressum-section');
-    if(impressumContainer) {
-        const addressHtml = `
-            <p><strong>${personalInfo.name}</strong></p>
-            <p>${personalInfo.address.street}<br>
-            ${personalInfo.address.city}<br>
-            ${personalInfo.address.country}</p>
-            
-        `;
-    
-        //const firstSection = document.querySelector('.impressum-section');
-        //if(firstSection) {
-        //    firstSection.innerHTML = addressHtml;
-        //}
-    } 
-}
-
 //=================== Json-Lade-Funktion ============================
 
 /**
@@ -283,7 +271,7 @@ function setText(selector, text) {
 * @param {string} message - Fehlermeldung
 */
 function showError(message) {
-    ['json-work-experience', 'json-education', 'json-skills', 'json-interests'].forEach(containerId => {
+    ['json-work-experience','json-aboutYou', 'json-education', 'json-skills', 'json-interests'].forEach(containerId => {
         const container = document.getElementById(containerId);
         if (container) {
             container.innerHTML = `<div class="json-error">${message}</div>`;

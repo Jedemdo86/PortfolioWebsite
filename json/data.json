@@ -10,13 +10,14 @@
                 "street": "Musterstraße 99",
                 "city": "12345 Musterstadt",
                 "country": "Deutschland"
-            },
+            }},
+            
             "aboutYou": {
                 "p1": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,",
                 "p2": "sed diam nonumy eirmod tempor invidunt ut labore et dolore",
                 "p3": "magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
-                }
-        },
+                },
+       
         "workExperience": [
             {
                 "position": "*Placeholder*",
