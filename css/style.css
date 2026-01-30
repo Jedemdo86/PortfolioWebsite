@@ -55,6 +55,7 @@ header img{
   object-fit: cover;
 }
 
+
 /* =========================================================
    NAVIGATION
 ========================================================= */
@@ -303,4 +304,16 @@ footer{
 @media (max-width: 720px){
   .is-open main{ margin-left: 0; }
   .sidebar{ width: min(var(--sidebar-w), 85vw); }
+}
+
+.cert-unit nav {
+  background: transparent;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cert-container section {
+  border: none;
 }
