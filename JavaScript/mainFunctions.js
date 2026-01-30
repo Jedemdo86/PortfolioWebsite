@@ -1,3 +1,13 @@
+// mainFunctions.js
+
+
+// Hinweis:
+// Anpassung der PDF. Dateien für den Download Bereich können in den jeweiligen Unterordnern (cert, CV) vorgenommen werden.
+// ZIP muss manuell erstellt werden und in den downloads Ordner hochgeladen werden.
+
+
+
+// Sidebar Toogle Funktion
 // Variablen Zuweisung
 const page = document.getElementById("page");
 const btn = document.getElementById("toggleBtn");
@@ -19,10 +29,10 @@ document.addEventListener("keydown", e => {
 });
 
 
-
+// Download Zertifikate / Lebenslauf Funktion
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Hier pflegst du deine Zertifikate ein
+    
     const zertifikate = [
         { name: "Python Programmierung Zertifikat", datei: "cert/python_cert.pdf" },
         { name: "Scrum Master Foundation", datei: "cert/scrum_cert.pdf" },
@@ -30,11 +40,11 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Praktikumszeugnis", datei: "cert/praktikum.pdf" }
     ];
 
-    // 2. Den Container im HTML finden
+
     const container = document.getElementById('cert-container');
 
     if (container) {
-        // Wir bauen das HTML Stück für Stück zusammen
+        
         let htmlContent = '';
 
         zertifikate.forEach(cert => {
@@ -53,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
         });
 
-        // 3. Das generierte HTML in den Container schreiben
+       
         container.innerHTML = htmlContent;
     }
 });

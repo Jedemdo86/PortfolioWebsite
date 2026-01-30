@@ -1,9 +1,14 @@
-// PortfolioWebsite/JavaScript/dataLoader.js
+// dataLoader.js
 /**
- * dataLoader.js
  * Lädt und verarbeitet JSON-Daten für das Portfolio-Website-Projekt.
  * Verantwortlich für das Füllen von Inhalten auf verschiedenen Seiten basierend auf den JSON-Daten.
+ * 
+ * Hinweis:
+ * Um das Produkt selbst nutzen zu können müssen die JSON-Daten im data.json File angepasst werden.
  */
+
+
+// =================== Hauptladefunktion ============================
 function loadData() {
     try {
         const portfolio = jsonData.portfolio;
