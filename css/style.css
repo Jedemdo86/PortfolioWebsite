@@ -273,7 +273,7 @@ main{
    FOOTER
 ========================================================= */
 footer{
-  background: var(--grey);
+  background: #4db8ff;
   display: grid;
   place-items: center;
   box-shadow: 0 -8px 20px rgba(0,0,0,.18);
@@ -288,7 +288,7 @@ footer{
   text-decoration: none;
   color: #557;
   margin: 0 10px;
-  font-size: 0.9rem;
+  font-size: 1.0rem;
 }
 
 .footer-text{
