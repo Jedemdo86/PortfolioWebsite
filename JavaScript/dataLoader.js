@@ -78,15 +78,14 @@ function fillWorkExperience(workExperience) {
     workExperience.forEach((job, index) => {
         const isLast = index === workExperience.length - 1;
         html += `
-        <div class="work-item ${isLast ? 'last' : ''}">
-            <div class="job-header">
+        <div class="job-card ${isLast ? 'last' : ''}">
                 <h3>${job.position}</h3>
                 <div class="job-meta">
                     <span class="company">${job.company}</span>
                     <span class="location">${job.location}</span>
                     <span class="period">${job.period}</span>
                 </div>
-            </div>
+        
             <ul class="job-responsibilities">
                 ${job.responsibilities.map(resp => `<li>${resp}</li>`).join('')}
             </ul>
@@ -109,14 +108,12 @@ function fillEducation(education) {
     education.forEach((edu, index) => {
         const isLast = index === education.length - 1;
         html += `
-        <div class="education-item ${isLast ? 'last' : ''}">
-            <div class="education-header">
+        <div class="job-card ${isLast ? 'last' : ''}">
                 <h3>${edu.program}</h3>
                 <div class="education-meta">
                     <span class="program">${edu.program}</span>
                     <span class="institution">${edu.institution}</span>
                     <span class="period">${edu.period}</span>
-                </div>
             </div>
         </div>`;
     });

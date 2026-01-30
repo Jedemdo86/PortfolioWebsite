@@ -1,149 +1,123 @@
 {
-    "portfolio":{
+    "portfolio": {
         "personalInfo": {
-            "name": "Max Mustermann",
-            "dateOfBirth": "01.01.1973",
-            "placeOfBirth": "Musterstadt",
-            "phone": "0123456789",
-            "email": "Max@Mustermann.de",
+            "name": "Luke Skywalker",
+            "dateOfBirth": "19.05.1977",
+            "placeOfBirth": "Tatooine",
+            "phone": "555-REBEL",
+            "email": "luke@rebellion.galaxy",
             "address": {
-                "street": "Musterstraße 99",
-                "city": "12345 Musterstadt",
-                "country": "Deutschland"
+                "street": "Mos Eisley Cantina 42",
+                "city": "Mos Eisley",
+                "country": "Outer Rim"
             }},
-            
             "aboutYou": {
-                "p1": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,",
-                "p2": "sed diam nonumy eirmod tempor invidunt ut labore et dolore",
-                "p3": "magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
-                },
-       
+                "p1": "Jedi-Ritter auf geheimer Mission, fliegt X-Wings durch Asteroidenfelder ohne Unfall, streitet sich oft mit Yoda über die richtige Grammatik der Macht, hat bereits 3 Todessterne überlebt, trainiertjunge Padawane im heimlichen Lichtschwert-Duell, kann Stormtrooper mit einem Wurf von R2-D2 überlisten.",
+                "p2": "Gelegentlicher Rebellen-Scout und Kaffeefanatiker, versteckt sich gerne vor Darth Vader in engen Lüftungsschächten, hat mehr technische Probleme mit R2-D2 als mit dem Imperium, macht Yoga in der Macht, um Stress abzubauen, hat eine Leidenschaft für intergalaktische Snacks (Womp Rats!), kann mit Chewbacca um die Wette brüllen, ohne zu verlieren.",
+                "p3": "Träumer aus Tatooine, der Sterne beobachtet, schwingt sein Lichtschwert dramatischer als jeder Filmheld, redet regelmäßig mit Geistern verstorbener Jedis, hat schon mindestens zwei Raumschiffe versehentlich zerstört, kann die dunkle Seite riechen, bevor sie überhaupt auftaucht, hat heimlich das beste Helm-Frisurenstyling der Galaxie."
+   
+            },
         "workExperience": [
             {
-                "position": "*Placeholder*",
-                "company": "*Placeholder*",
-                "location": "Musterstadt",
-                "period": "01.01.1973-01.01.2036",
+                "position": "Jedi Padawan",
+                "company": "Jedi Order",
+                "location": "Coruscant",
+                "period": "01.01.1997-01.01.2005",
                 "responsibilities": [
-                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,", 
-                    "sed diam nonumy eirmod tempor invidunt ut labore et dolore", 
-                    "magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "Training mit Meister Obi-Wan Kenobi", 
+                    "Lichtschwert-Kampftrainings absolvieren", 
+                    "Meditation in der Macht praktizieren",
+                    "Holocrons studieren und Geheimnisse entdecken",
+                    "Verborgene Sith-Aktivitäten überwachen"
                 ]
             },
             {
-                "position": "*Placeholder*",
-                "company": "*Placeholder*",
-                "location": "Musterstadt",
-                "period": "01.01.1973-01.01.2036",
+                "position": "Rebellenscout",
+                "company": "Rebel Alliance",
+                "location": "Yavin 4",
+                "period": "01.01.2005-01.01.2007",
                 "responsibilities": [
-                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,", 
-                    "sed diam nonumy eirmod tempor invidunt ut labore et dolore", 
-                    "magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "Imperiale Sternenzerstörer ausspionieren",
+                    "Koordinieren von Angriffen auf Death Star",
+                    "Fliegen von X-Wings bei riskanten Missionen",
+                    "Verstecken vor Darth Vader",
+                    "Liaison zwischen Rebellen und Jedis"
                 ]
             },
             {
-                "position": "*Placeholder*",
-                "company": "*Placeholder*",
-                "location": "Musterstadt",
-                "period": "01.01.1973-01.01.2036",
+                "position": "Sith-Temporär-Konfliktmanager",
+                "company": "Galaktische Republik",
+                "location": "Endor",
+                "period": "01.01.2007-01.01.2008",
                 "responsibilities": [
-                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,", 
-                    "sed diam nonumy eirmod tempor invidunt ut labore et dolore", 
-                    "magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "Diplomatie zwischen Imperium und Rebellion",
+                    "Konflikte mit Wookiees lösen",
+                    "Imperiale Droiden analysieren",
+                    "Verhandlungen auf dem Todesstern",
+                    "Kampfstrategien entwickeln"
                 ]
             },
             {
-                "position": "*Placeholder*",
-                "company": "*Placeholder*",
-                "location": "Musterstadt",
-                "period": "01.01.1973-01.01.2036",
+                "position": "Jedi-Meister",
+                "company": "Jedi Order",
+                "location": "Ahch-To",
+                "period": "01.01.2008-Heute",
                 "responsibilities": [
-                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,", 
-                    "sed diam nonumy eirmod tempor invidunt ut labore et dolore", 
-                    "magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
-                ]
-            },
-            {
-                "position": "*Placeholder*",
-                "company": "*Placeholder*",
-                "location": "Musterstadt",
-                "period": "01.01.1973-01.01.2036",
-                "responsibilities": [
-                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,", 
-                    "sed diam nonumy eirmod tempor invidunt ut labore et dolore", 
-                    "magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "Trainieren neuer Padawane",
+                    "Verhindern dass Sith zurückkehren",
+                    "Alte Jedi-Schriften studieren",
+                    "Intergalaktische Friedensmissionen",
+                    "Mentoring und Lichtschwert-Seminare"
                 ]
             }
         ],
-        "education":[
+        "education": [
             {
-                "program": "Umschulung Fachinformatiker Anwendungsentwicklung (IHK)",
-                "institution": "GFN",
-                "period": "01/2025 - 01/2027 (geplant)"
+                "program": "Jedi Ausbildung (Padawan)",
+                "institution": "Jedi Temple",
+                "period": "01/1997 - 01/2005"
             },
             {
-                "program": "Umschulung Fachinformatiker Anwendungsentwicklung (IHK)",
-                "institution": "GFN",
-                "period": "01/2025 - 01/2027 (geplant)"
+                "program": "Rebellenausbildung in Taktik",
+                "institution": "Yavin 4 Academy",
+                "period": "01/2005 - 01/2007"
             },
             {
-                "program": "Umschulung Fachinformatiker Anwendungsentwicklung (IHK)",
-                "institution": "GFN",
-                "period": "01/2025 - 01/2027 (geplant)"
+                "program": "Meisterkurs Jedi",
+                "institution": "Ahch-To",
+                "period": "01/2008 - Heute"
             }
         ],
         "skills": {
             "languages": [
-                {
-                    "language": "Deutsch",
-                    "level": "gut"
-                },
-                {
-                    "language": "Englisch",
-                    "level": "gut"
-                }
+                { "language": "Galactic Basic", "level": "fließend" },
+                { "language": "Wookiee", "level": "grundlegend" }
             ],
             "software": [
-                {
-                    "name": "MS Office",
-                    "level": "Adept"
-                },
-                {
-                    "name": "Python",
-                    "level": "Basic"
-                },
-                {
-                    "name": "Java",
-                    "level": "Basic"
-                },
-                {
-                    "name": "HTML & CSS",
-                    "level": "Basic"
-                },
-                {
-                    "name": "MySQL",
-                    "level": "Basic"
-                }
+                { "name": "X-Wing Cockpit Systeme", "level": "Experte" },
+                { "name": "Holocron Datenbanken", "level": "Fortgeschritten" },
+                { "name": "Starship Navigation", "level": "Experte" },
+                { "name": "Droid Programming", "level": "Basis" },
+                { "name": "Lightsaber Simulation", "level": "Experte" }
             ],
-            "drivingLicense": "Klasse B",
+            "drivingLicense": "Intergalactic Pilot License",
             "abilities": [
-                "Zuverlässigkeit",
-                "Zuverlässigkeit",
-                "Zuverlässigkeit",
-                "Zuverlässigkeit",
-                "Zuverlässigkeit",
-                "Zuverlässigkeit",
-                "Zuverlässigkeit"
+                "Machtgefühl",
+                "Lichtschwertkampf",
+                "X-Wing fliegen",
+                "Telekinese",
+                "Rebellen inspirieren",
+                "Sith erkennen",
+                "Diplomatie"
             ]
         },
         "interests": [
-            "Computer",
-            "Computer",
-            "Computer",
-            "Computer",
-            "Computer",
-            "Computer"
+            "Intergalaktische Reisen",
+            "Droiden reparieren",
+            "Sterne beobachten",
+            "Lichtschwerttraining",
+            "Wookiees besuchen",
+            "Sternenzerstörer besichtigen"
         ]
-        
     }
 }

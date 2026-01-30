@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </a>
                     <nav>
                         <ul class="nav-list" style="padding: 0; list-style: none; margin: 0;">
-                            <li><a href="downloads/${cert.datei}" download>📥 Direkt Download (PDF)</a></li>
+                            <li><a href="downloads/${cert.datei}" download> Direkt Download (PDF)</a></li>
                         </ul>
                     </nav>
                 </div>
