@@ -24,10 +24,10 @@ document.addEventListener("keydown", e => {
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Hier pflegst du deine Zertifikate ein
     const zertifikate = [
-        { name: "Python Programmierung Zertifikat", datei: "python_cert.pdf" },
-        { name: "Scrum Master Foundation", datei: "scrum_cert.pdf" },
-        { name: "Sprachzertifikat Englisch (C1)", datei: "englisch_c1.pdf" },
-        { name: "Praktikumszeugnis", datei: "praktikum.pdf" }
+        { name: "Python Programmierung Zertifikat", datei: "cert/python_cert.pdf" },
+        { name: "Scrum Master Foundation", datei: "cert/scrum_cert.pdf" },
+        { name: "Sprachzertifikat Englisch (C1)", datei: "cert/englisch_c1.pdf" },
+        { name: "Praktikumszeugnis", datei: "cert/praktikum.pdf" }
     ];
 
     // 2. Den Container im HTML finden
