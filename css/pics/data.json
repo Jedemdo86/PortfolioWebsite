@@ -1,0 +1,123 @@
+{
+    "portfolio": {
+        "personalInfo": {
+            "name": "Luke Skywalker",
+            "dateOfBirth": "19.05.1977",
+            "placeOfBirth": "Tatooine",
+            "phone": "555-REBEL",
+            "email": "luke@rebellion.galaxy",
+            "address": {
+                "street": "Mos Eisley Cantina 420",
+                "city": "Mos Eisley",
+                "country": "Outer Rim"
+            }},
+            "aboutYou": {
+                "p1": "Jedi-Ritter auf geheimer Mission, fliegt X-Wings durch Asteroidenfelder ohne Unfall, streitet sich oft mit Yoda über die richtige Grammatik der Macht, hat bereits 3 Todessterne überlebt, trainiertjunge Padawane im heimlichen Lichtschwert-Duell, kann Stormtrooper mit einem Wurf von R2-D2 überlisten.",
+                "p2": "Gelegentlicher Rebellen-Scout und Kaffeefanatiker, versteckt sich gerne vor Darth Vader in engen Lüftungsschächten, hat mehr technische Probleme mit R2-D2 als mit dem Imperium, macht Yoga in der Macht, um Stress abzubauen, hat eine Leidenschaft für intergalaktische Snacks (Womp Rats!), kann mit Chewbacca um die Wette brüllen, ohne zu verlieren.",
+                "p3": "Träumer aus Tatooine, der Sterne beobachtet, schwingt sein Lichtschwert dramatischer als jeder Filmheld, redet regelmäßig mit Geistern verstorbener Jedis, hat schon mindestens zwei Raumschiffe versehentlich zerstört, kann die dunkle Seite riechen, bevor sie überhaupt auftaucht, hat heimlich das beste Helm-Frisurenstyling der Galaxie."
+   
+            },
+        "workExperience": [
+            {
+                "position": "Jedi Padawan",
+                "company": "Jedi Order",
+                "location": "Coruscant",
+                "period": "01.01.1997-01.01.2005",
+                "responsibilities": [
+                    "Training mit Meister Obi-Wan Kenobi", 
+                    "Lichtschwert-Kampftrainings absolvieren", 
+                    "Meditation in der Macht praktizieren",
+                    "Holocrons studieren und Geheimnisse entdecken",
+                    "Verborgene Sith-Aktivitäten überwachen"
+                ]
+            },
+            {
+                "position": "Rebellenscout",
+                "company": "Rebel Alliance",
+                "location": "Yavin 4",
+                "period": "01.01.2005-01.01.2007",
+                "responsibilities": [
+                    "Imperiale Sternenzerstörer ausspionieren",
+                    "Koordinieren von Angriffen auf Death Star",
+                    "Fliegen von X-Wings bei riskanten Missionen",
+                    "Verstecken vor Darth Vader",
+                    "Liaison zwischen Rebellen und Jedis"
+                ]
+            },
+            {
+                "position": "Sith-Temporär-Konfliktmanager",
+                "company": "Galaktische Republik",
+                "location": "Endor",
+                "period": "01.01.2007-01.01.2008",
+                "responsibilities": [
+                    "Diplomatie zwischen Imperium und Rebellion",
+                    "Konflikte mit Wookiees lösen",
+                    "Imperiale Droiden analysieren",
+                    "Verhandlungen auf dem Todesstern",
+                    "Kampfstrategien entwickeln"
+                ]
+            },
+            {
+                "position": "Jedi-Meister",
+                "company": "Jedi Order",
+                "location": "Ahch-To",
+                "period": "01.01.2008-Heute",
+                "responsibilities": [
+                    "Trainieren neuer Padawane",
+                    "Verhindern dass Sith zurückkehren",
+                    "Alte Jedi-Schriften studieren",
+                    "Intergalaktische Friedensmissionen",
+                    "Mentoring und Lichtschwert-Seminare"
+                ]
+            }
+        ],
+        "education": [
+            {
+                "program": "Jedi Ausbildung (Padawan)",
+                "institution": "Jedi Temple",
+                "period": "01/1997 - 01/2005"
+            },
+            {
+                "program": "Rebellenausbildung in Taktik",
+                "institution": "Yavin 4 Academy",
+                "period": "01/2005 - 01/2007"
+            },
+            {
+                "program": "Meisterkurs Jedi",
+                "institution": "Ahch-To",
+                "period": "01/2008 - Heute"
+            }
+        ],
+        "skills": {
+            "languages": [
+                { "language": "Galactic Basic", "level": "fließend" },
+                { "language": "Wookiee", "level": "grundlegend" }
+            ],
+            "software": [
+                { "name": "X-Wing Cockpit Systeme", "level": "Experte" },
+                { "name": "Holocron Datenbanken", "level": "Fortgeschritten" },
+                { "name": "Starship Navigation", "level": "Experte" },
+                { "name": "Droid Programming", "level": "Basis" },
+                { "name": "Lightsaber Simulation", "level": "Experte" }
+            ],
+            "drivingLicense": "Intergalactic Pilot License",
+            "abilities": [
+                "Machtgefühl",
+                "Lichtschwertkampf",
+                "X-Wing fliegen",
+                "Telekinese",
+                "Rebellen inspirieren",
+                "Sith erkennen",
+                "Diplomatie"
+            ]
+        },
+        "interests": [
+            "Intergalaktische Reisen",
+            "Droiden reparieren",
+            "Sterne beobachten",
+            "Lichtschwerttraining",
+            "Wookiees besuchen",
+            "Sternenzerstörer besichtigen"
+        ]
+    }
+}
